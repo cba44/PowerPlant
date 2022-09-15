@@ -6,6 +6,17 @@ public class BatteryDTO {
 	private long postcode;
 	private long capacity;
 
+
+	public BatteryDTO() {
+		super();
+	}
+
+	public BatteryDTO(String name, long postcode, long capacity) {
+		this.name = name;
+		this.postcode = postcode;
+		this.capacity = capacity;
+	}
+
 	public String getName() {
 		return name;
 	}

@@ -2,17 +2,23 @@ package com.chiran.powerplant.dto;
 
 import java.util.List;
 
-public class BatteryDetailsDTO {
+public class BatteryResponseDTO {
 
-	private List<BatteryDTO> batteries;
+	private List<String> batteries;
 	private long totalWatts;
 	private double averageWatts;
 
-	public List<BatteryDTO> getBatteries() {
+	public BatteryResponseDTO(List<String> batteries, long totalWatts, double averageWatts) {
+		this.batteries = batteries;
+		this.totalWatts = totalWatts;
+		this.averageWatts = averageWatts;
+	}
+
+	public List<String> getBatteries() {
 		return batteries;
 	}
 
-	public void setBatteries(List<BatteryDTO> batteries) {
+	public void setBatteries(List<String> batteries) {
 		this.batteries = batteries;
 	}
 
