@@ -56,9 +56,9 @@ class BatteryRepositoryTest {
 
 		List<Battery> fetched = batteryRepository.findByPostcodeBetween(300, 500);
 		assertEquals(3, fetched.size());
-		assertEquals("test battery 1224", fetched.get(0).getName());
+		assertEquals("test battery 3", fetched.get(0).getName());
 		assertEquals("test battery 1", fetched.get(1).getName());
-		assertEquals("test battery 2", fetched.get(2).getName());
+		assertEquals("test battery 5", fetched.get(2).getName());
 	}
 
 }
