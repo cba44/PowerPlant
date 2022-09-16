@@ -6,8 +6,11 @@ public class BatteryRequestDTO {
 
 	private List<BatteryDTO> batteries;
 
+	public BatteryRequestDTO() {
+
+	}
+
 	public BatteryRequestDTO(List<BatteryDTO> batteries) {
-		super();
 		this.batteries = batteries;
 	}
 

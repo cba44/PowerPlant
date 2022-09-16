@@ -15,6 +15,16 @@ public class Battery {
 	private long postcode;
 	private long capacity;
 
+	public Battery() {
+		super();
+	}
+
+	public Battery(String name, long postcode, long capacity) {
+		this.name = name;
+		this.postcode = postcode;
+		this.capacity = capacity;
+	}
+
 	public long getId() {
 		return id;
 	}

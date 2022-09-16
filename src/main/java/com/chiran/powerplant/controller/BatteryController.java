@@ -33,7 +33,7 @@ public class BatteryController {
 	}
 
 	@GetMapping("batteries")
-	public ResponseEntity<BatteryResponseDTO> getBatteriesForRange(@RequestParam long start, @RequestParam long end) {
-		return ResponseEntity.ok(service.retrieveBatteries(start, end));
+	public ResponseEntity<BatteryResponseDTO> getBatteriesForRange(@RequestParam long rangeStart, @RequestParam long rangeEnd) {
+		return ResponseEntity.ok(service.retrieveBatteries(rangeStart, rangeEnd));
 	}
 }
