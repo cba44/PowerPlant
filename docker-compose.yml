@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  powerplant:
+    build:
+      context: .
+    image: powerplant:latest
+    container_name: powerplant
+    ports:
+      - 8080:8080
